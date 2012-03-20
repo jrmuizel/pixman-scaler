@@ -4,6 +4,9 @@ INCLUDES = -I$(top_srcdir)/pixman -I$(top_builddir)/pixman
 TESTPROGRAMS =			\
 	region-test		\
 	scaling-test		\
+	rescale-test		\
+	scale-out-test		\
+	ensure-good-test	\
 	fetch-test		\
 	oob-test		\
 	window-test		\
@@ -15,6 +18,10 @@ scaling_test_LDADD = $(TEST_LDADD)
 trap_crasher_LDADD = $(TEST_LDADD)
 oob_test_LDADD = $(TEST_LDADD)
 window_test_LDADD = $(TEST_LDADD)
+extract_scale_LDADD = $(TEST_LDADD)
+rescale_test_LDADD = $(TEST_LDADD)
+ensure_good_test_LDADD = $(TEST_LDADD)
+scale_out_test_LDADD = $(TEST_LDADD) in.o
 
 # GTK using test programs
 

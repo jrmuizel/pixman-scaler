@@ -33,6 +33,10 @@ libpixman_1_la_SOURCES =			\
 	pixman-edge-imp.h			\
 	pixman-trap.c				\
 	pixman-timer.c				\
+	pixman-rescale.c			\
+	pixman-rescale-box.c			\
+	pixman-rescale-integer-box.c		\
+	pixman-rescale-lanczos.c		\
 	pixman-matrix.c
 
 libpixmanincludedir = $(includedir)/pixman-1/

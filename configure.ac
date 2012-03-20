@@ -114,6 +114,13 @@ if test "x$GCC" = "xyes"; then
 
 fi changequote([,])dnl
 
+changequote(,)dnl
+if test "x$GCC" = "xyes"; then
+  case " $CFLAGS " in
+  *[\ \	]-Wdeclaration-after-statement[\ \	]*) ;;
+  *) CFLAGS="$CFLAGS" ;;
+  esac fi changequote([,])dnl
+
 AC_PATH_PROG(PERL, perl, no)
 if test "x$PERL" = xno; then
     AC_MSG_ERROR([Perl is required to build pixman.])
